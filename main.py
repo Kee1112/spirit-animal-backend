@@ -7,11 +7,11 @@ from fastapi.staticfiles import StaticFiles
 app = FastAPI()
 
 
-app.mount("/static", StaticFiles(directory= "spirit-animal/frontend/static"), name="static") #this simply takes care of static files like css and js 
+'''app.mount("/static", StaticFiles(directory= "spirit-animal/frontend/static"), name="static") #this simply takes care of static files like css and js 
 
 @app.get("/")
 def file():
-    return FileResponse("frontend/index.html") # html is not a static file so we serve it like this 
+    return FileResponse("frontend/index.html") # html is not a static file so we serve it like this'''
 
 
 app.add_middleware(

@@ -24,9 +24,9 @@ app.add_middleware(
 def get_spirit_animal(vowel_count : int):
     if vowel_count <= 2:
         return "Phoenix 🔥"
-    elif vowel_count <= 4:
+    elif vowel_count <= 3:
         return "Dragon 🐉"
-    elif vowel_count <= 6:
+    elif vowel_count <= 4:
         return "Horse 🐎"
     else:
         return "Unicorn 🦄"
